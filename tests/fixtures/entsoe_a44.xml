@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Publication_MarketDocument xmlns="urn:iec62325.351:tc57wg16:451-3:publicationdocument:7:3">
+  <mRID>sample</mRID>
+  <type>A44</type>
+  <TimeSeries>
+    <mRID>1</mRID>
+    <currency_Unit.name>EUR</currency_Unit.name>
+    <price_Measure_Unit.name>MWH</price_Measure_Unit.name>
+    <curveType>A03</curveType>
+    <Period>
+      <timeInterval><start>2026-10-07T22:00Z</start><end>2026-10-07T23:00Z</end></timeInterval>
+      <resolution>PT15M</resolution>
+      <Point><position>1</position><price.amount>100.5</price.amount></Point>
+      <Point><position>2</position><price.amount>90</price.amount></Point>
+      <!-- position 3 omitted: A03 means it repeats position 2 -->
+      <Point><position>4</position><price.amount>-5.25</price.amount></Point>
+    </Period>
+  </TimeSeries>
+  <TimeSeries>
+    <mRID>2</mRID>
+    <curveType>A01</curveType>
+    <Period>
+      <timeInterval><start>2026-10-07T22:00Z</start><end>2026-10-08T00:00Z</end></timeInterval>
+      <resolution>PT60M</resolution>
+      <Point><position>1</position><price.amount>999</price.amount></Point>
+      <Point><position>2</position><price.amount>70</price.amount></Point>
+    </Period>
+  </TimeSeries>
+</Publication_MarketDocument>
